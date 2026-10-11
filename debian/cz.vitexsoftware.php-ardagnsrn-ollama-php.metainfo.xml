@@ -13,5 +13,6 @@
       responses and model management.
     </p>
   </description>
-  <icon type="stock">network-transmit-receive</icon>
+  <url type="homepage">https://github.com/ardagnsrn/ollama-php</url>
+  <icon type="stock">cz.vitexsoftware.php-ardagnsrn-ollama-php</icon>
 </component>
