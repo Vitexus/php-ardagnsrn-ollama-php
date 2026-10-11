@@ -1,5 +1,6 @@
 {
     "name": "ardagnsrn/ollama-php",
+    "type": "library",
     "description": "This is a PHP library for Ollama. Ollama is an open-source project that serves as a powerful and user-friendly platform for running LLMs on your local machine. It acts as a bridge between the complexities of LLM technology and the desire for an accessible and customizable AI experience.",
     "keywords": [
         "ArdaGnsrn",

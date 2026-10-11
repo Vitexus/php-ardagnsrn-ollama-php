@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="generic">
+  <id>cz.vitexsoftware.php-ardagnsrn-ollama-php</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Ollama PHP</name>
+  <summary>PHP client library for the Ollama LLM platform</summary>
+  <description>
+    <p>
+      Ollama is an open-source platform for running large language models on
+      the local machine. This library provides a PHP client for the Ollama
+      API with support for chat, completions, embeddings, streaming
+      responses and model management.
+    </p>
+  </description>
+  <icon type="stock">network-transmit-receive</icon>
+</component>

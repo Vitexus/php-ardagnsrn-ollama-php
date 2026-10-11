@@ -1,0 +1,24 @@
+Source: php-ardagnsrn-ollama-php
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ appstream,
+ jq,
+Standards-Version: 4.7.0
+Homepage: https://github.com/ardagnsrn/ollama-php
+Rules-Requires-Root: no
+
+Package: php-ardagnsrn-ollama-php
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ composer,
+ php-guzzlehttp-guzzle,
+Description: PHP client library for Ollama
+ Ollama is an open-source platform for running large language models
+ on the local machine. This library provides a PHP client for the
+ Ollama API with support for chat, completions, embeddings, streaming
+ and model management.

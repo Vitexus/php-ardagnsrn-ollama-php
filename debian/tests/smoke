@@ -1,0 +1,23 @@
+#!/usr/bin/php
+<?php
+
+declare(strict_types=1);
+
+require '/usr/lib/php-ardagnsrn-ollama-php/autoload.php';
+
+if (!\Composer\InstalledVersions::isInstalled('ardagnsrn/ollama-php')) {
+    fwrite(STDERR, "ardagnsrn/ollama-php not registered in InstalledVersions\n");
+    exit(1);
+}
+
+if (\Composer\InstalledVersions::getPrettyVersion('ardagnsrn/ollama-php') === '0.0.0') {
+    fwrite(STDERR, "ardagnsrn/ollama-php version was not baked in\n");
+    exit(1);
+}
+
+if (!class_exists(\ArdaGnsrn\Ollama\Ollama::class)) {
+    fwrite(STDERR, "ArdaGnsrn\Ollama\Ollama class not autoloadable\n");
+    exit(1);
+}
+
+echo \Composer\InstalledVersions::getPrettyVersion('ardagnsrn/ollama-php') . "\n";
